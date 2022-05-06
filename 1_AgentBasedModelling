@@ -1,64 +1,64 @@
 import random
 
-#set up variables
+'''set up variables'''
 x0 = 50
 y0 = 50
 
-#move y0 1
+'''move y0 1'''
 if random.random() < 0.5:
-     y0 = y0 + 1
+    y0 = y0 + 1
 else:
     y0 = y0 - 1
 
-#move y0 2
+'''move y0 2'''
 if random.random() < 0.5:
-     y0 = y0 + 1
+    y0 = y0 + 1
 else:
     y0 = y0 - 1
 
-#move x0 1
+'''move x0 1'''
 if random.random() < 0.5:
-     x0 = x0 + 1
+    x0 = x0 + 1
 else:
     x0 = x0 - 1
 
-#move x0 2
+'''move x0 2'''
 if random.random() < 0.5:
-     x0 = x0 + 1
+    x0 = x0 + 1
 else:
     x0 = x0 - 1
-    
+
 print(y0, x0)
 
 
 
 
 
-#set up variables
+'''set up variables'''
 x1 = 50
 y1 = 50
 
-#move y1 1
+'''move y1 1'''
 if random.random() < 0.5:
-     y1 = y1 + 1
+    y1 = y1 + 1
 else:
     y1 = y1 - 1
 
-#move y1 2
+'''move y1 2'''
 if random.random() < 0.5:
-     y1 = y1 + 1
+    y1 = y1 + 1
 else:
     y1 = y1 - 1
 
-#move x1 1
+'''move x1 1'''
 if random.random() < 0.5:
-     x1 = x1 + 1
+    x1 = x1 + 1
 else:
     x1 = x1 - 1
 
-#move x1 2
+'''move x1 2'''
 if random.random() < 0.5:
-     x1 = x1 + 1
+    x1 = x1 + 1
 else:
     x1 = x1 - 1
 
