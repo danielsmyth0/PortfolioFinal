@@ -3,63 +3,65 @@ import operator
 import matplotlib.pyplot
 agents = []
 
-#set up variables 0-99
+'''set up variables 0-99'''
 agents.append([random.randint(0, 99),random.randint(0, 99)])
 
-#move y0 1
+'''move y0 1'''
 if random.random() < 0.5:
      agents[0][0] = agents[0][0] + 1
 else:
     agents[0][0] = agents[0][0] - 1
 
-#move y0 2
+'''move y0 2'''
 if random.random() < 0.5:
      agents[0][0] = agents[0][0] + 1
 else:
     agents[0][0] = agents[0][0] - 1
 
-#move x0 1
+'''move x0 1'''
 if random.random() < 0.5:
      agents[0][1] = agents[0][1] + 1
 else:
     agents[0][1] = agents[0][1] - 1
 
-#move x0 2
+'''move x0 2'''
 if random.random() < 0.5:
      agents[0][1] = agents[0][1] + 1
 else:
     agents[0][1] = agents[0][1] - 1
     
 
-#set up variables 0-99
+'''set up variables 0-99'''
 agents.append([random.randint(0, 99),random.randint(0, 99)])
 
-#move y1 1
+'''move y1 1'''
 if random.random() < 0.5:
      agents[1][0] = agents[1][0] + 1
 else:
     agents[1][0] = agents[1][0] - 1
 
-#move y1 2
+'''move y1 2'''
 if random.random() < 0.5:
      agents[1][0] = agents[1][0] + 1
 else:
     agents[1][0] = agents[1][0] - 1
 
-#move x1 1
+'''move x1 1'''
 if random.random() < 0.5:
      agents[1][1] = agents[1][1] + 1
 else:
     agents[1][1] = agents[1][1] - 1
 
-#move x1 2
+'''move x1 2'''
 if random.random() < 0.5:
      agents[1][1] = agents[1][1] + 1
 else:
     agents[1][1] = agents[1][1] - 1
     
+'''Create variable for max east point'''   
 maxE = max(agents, key=operator.itemgetter(1))
 
+'''Plot 2 cooridantes, plot make east coordinate in red'''
 matplotlib.pyplot.ylim(0, 99)
 matplotlib.pyplot.xlim(0, 99)
 matplotlib.pyplot.scatter(agents[0][1],agents[0][0])
@@ -67,5 +69,6 @@ matplotlib.pyplot.scatter(agents[1][1],agents[1][0])
 matplotlib.pyplot.scatter(maxE[1], maxE[0], color='red')
 matplotlib.pyplot.show()
 
+'''print max east coordinate'''
 print(max(agents, key=operator.itemgetter(1)))
 #answer = (((agents[0][0] -agents[1][0])**2) + (agents[0][1] - agents[1][1]))**0.5
